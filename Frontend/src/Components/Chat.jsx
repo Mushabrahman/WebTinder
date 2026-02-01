@@ -251,7 +251,7 @@ function Chat() {
       {/* Header */}
       <div className="p-4 border-b border-gray-600 flex justify-between items-center">
         <div className="flex items-center gap-3">
-          <img src={targetProfilePhoto} alt={targetFirstName} className="w-8 h-8 rounded-full" />
+          <img src={`${BASE_URL}${targetProfilePhoto}`} alt={targetFirstName} className="w-8 h-8 rounded-full" />
           <span className="text-xl font-semibold">{targetFirstName || "Chat Partner"}</span>
         </div>
         <span className={`text-sm ${onlineUsers.includes(targetUserId) ? "text-green-500" : "text-gray-400"}`}>

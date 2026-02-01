@@ -103,8 +103,8 @@ function EditProfile({ user }) {
                         className="input mt-2 text-black font-semibold pl-2 cursor-pointer"
                         onChange={(e) => setGender(e.target.value)}
                     >
-                        <option value="male cursor-pointer">male</option>
-                        <option value="female cursor-pointer">female</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
                     </select>
                 </div>
 

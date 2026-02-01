@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addConnectionRequest } from "../utils/connectionRequestSlice";
 import { removeConnectionRequest } from "../utils/connectionRequestSlice";
+import { BASE_URL } from "../config";
 
 export default function ConnectionRequest() {
     const [error, setError] = useState(null);
