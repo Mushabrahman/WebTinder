@@ -6,10 +6,8 @@ const onlineUsers = new Set()
 
 const initializeSocket = (server) => {
 
-  const origin =
-    process.env.NODE_ENV === "production"
-      ? "http://13.201.25.1"
-      : "http://localhost:5173";
+  const origin = "http://13.201.25.1";
+    
 
   const io = Socket(server, {
     cors: {
