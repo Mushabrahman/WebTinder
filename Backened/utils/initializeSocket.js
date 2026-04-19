@@ -8,7 +8,7 @@ const initializeSocket = (server) => {
 
   const origin =
     process.env.NODE_ENV === "production"
-      ? "http://13.201.25.1/"
+      ? "http://13.201.25.1"
       : "http://localhost:5173";
 
   const io = Socket(server, {
