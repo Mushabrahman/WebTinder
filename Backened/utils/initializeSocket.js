@@ -6,7 +6,7 @@ const onlineUsers = new Set()
 
 const initializeSocket = (server) => {
 
-  const origin = "https://13.201.25.1";
+  const origin = "https://webtinder.in";
     
 
   const io = Socket(server, {
