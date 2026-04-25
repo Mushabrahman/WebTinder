@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   server:{
     proxy:{
-     '/api': "https://webtinder.in"
+     '/api': "http://localhost:8000"
     }
   },
   plugins: [react(),
