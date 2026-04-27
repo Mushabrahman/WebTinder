@@ -6,12 +6,14 @@ const onlineUsers = new Set()
 
 const initializeSocket = (server) => {
 
-  const origin = "https://www.webtinder.in";
     
 
   const io = Socket(server, {
     cors: {
-      origin,
+      origin: [
+        "https://www.webtinder.in",
+        "https://webtinder.in"
+      ],
       credentials: true,
     },
   });
