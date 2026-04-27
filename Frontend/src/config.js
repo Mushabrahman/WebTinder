@@ -3,4 +3,4 @@ const dev = window.location.hostname === "localhost";
 
 export const BASE_URL = dev
   ? "http://localhost:8000"
-  : "https://webtinder.in";
+  : "https://www.webtinder.in";
